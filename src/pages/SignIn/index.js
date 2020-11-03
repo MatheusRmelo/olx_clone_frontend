@@ -26,6 +26,8 @@ export default () => {
             doLogin(json.token, rememberPassword);  
             window.location.href = "/";
         }
+
+        setDisable(false);
     }
     return(
         <PageContainer>

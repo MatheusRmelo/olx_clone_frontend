@@ -2,10 +2,15 @@ import React from 'react';
 import { HeaderArea } from './styles';
 import { Link } from 'react-router-dom';
 
-import { isLogged } from '../../../helpers/AuthHeader';
+import { isLogged, doLogout } from '../../../helpers/AuthHeader';
 
 export default () => {
     let logged = isLogged();
+
+    const handleLogout = () => {
+        doLogout();
+        window.location.href="/";
+    }
 
     return(
         <HeaderArea>
@@ -23,7 +28,7 @@ export default () => {
                             logged ?
                             <>
                                 <li><Link to="/my-account">Minha conta</Link></li>
-                                <li><Link to="/logout">Sair</Link></li>
+                                <li><button onClick={handleLogout}>Sair</button></li>
                                 <li><Link to="/post-an-ad" className="button">Poste um anúncio</Link></li>
                             </>
                             :
