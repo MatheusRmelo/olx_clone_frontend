@@ -59,7 +59,6 @@ export const PageArea = styled.div`
             }
         }
     }
-
     @media(max-width:600px){
 
         form{

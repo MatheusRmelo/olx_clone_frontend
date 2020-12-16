@@ -35,7 +35,7 @@ export default () => {
                             <>
                                 <li><Link to="/signin">Login</Link></li>
                                 <li><Link to="/signup">Cadastrar</Link></li>
-                                <li><Link to="/signin" className="button">Poste um anúncio</Link></li>
+                                <li><Link to="/post-an-ad" className="button">Poste um anúncio</Link></li>
                             </>
                         }
                         

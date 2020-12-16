@@ -26,7 +26,7 @@ export const PageArea = styled.div`
             .area-input{
                 flex:1;
 
-                input {
+                input, select, textarea {
                     
                     font-size:16px;
                     padding:8px;
@@ -39,6 +39,11 @@ export const PageArea = styled.div`
                         border: 1px solid #333;
                         color:#333; 
                     }
+                }
+
+                textarea{
+                    height:150px;
+                    resize:none;
                 }
 
                 button {
@@ -56,10 +61,11 @@ export const PageArea = styled.div`
                         background-color: #006FCE;
                     }
                 }
+
+
             }
         }
     }
-
     @media(max-width:600px){
 
         form{
